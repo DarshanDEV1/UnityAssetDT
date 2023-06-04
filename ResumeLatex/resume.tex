@@ -1,0 +1,260 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \usepackage{longtable}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {Bedaprakash Saidarsan Sahoo}}\\
+    \vspace*{2pt}
+    \ {Game Developer, Python Developer}\\
+    \vspace*{2pt}
+    \href{mailto:darshansahoo20@gmail.com}{darshansahoo20@gmail.com} | \href{tel:+917854006835}{+917854006835} | Bhubaneswar\\
+    \vspace*{2pt}
+    
+  \end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Education}
+      \vspace{2mm}
+      \textbf{Lakshya Institute of Technology}\hfill Odisha, India\\
+Bachelor\textquotesingle{}s Computer Application (BCA) \hfill Oct/2021 - Oct/2024\\
+
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Experience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Experience}
+  \vspace{2mm}
+
+  \textbf{Youth India E-School}\textbf{ | Teaching Intern} \hfill Bhubaneswar, Odisha, India (Remote) | Jan 2022 - Apr 2022\\
+  \textbf{Saarthi Tech Pro}\textbf{ | Teaching Intern} \hfill Remote | Jan 2022 - Jan 2022\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Skills}
+  \vspace{2mm}
+  \begin{longtable}{p{4cm}p{12cm}}
+  Programming Languages: & C++, Python, C, HTML, CSS, Shell Scripting \\
+  Tools / Platforms: & Unity3d, Blender, Ursina, Photon Engine, Tkinter, Numpy, Pandas, Matplotlib \\
+  \end{longtable}
+  \vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Projects / Open-Source}
+      \vspace{2mm}
+      {\textbf{Windows Navigator}}\textbf{ | \href{https://github.com/DarshanDEV1/WindowsNavigator}{Link}}\hfill{\sl Python-TK, Pillow, Web\_broswer, Os, Wikipedia}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple GUI application using python tkinter using different libraries which enables usage of most frequent applications easy.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Windows Wikipedia}}\textbf{ | \href{https://github.com/DarshanDEV1/DT\_Wiki}{Link}}\hfill{\sl Python-TK, Wikipedia}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple GUI application using python tkinter which provides an interface to search summary of any topic through windows application.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Windows Notepad Replica}}\textbf{ | \href{https://github.com/DarshanDEV1/DT\_Notepad}{Link}}\hfill{\sl Python-TK, OS, Tkterminal}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple replica GUI application of windows notepad. Just added embedded inbuilt terminal in it.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{DT\_FILE}}\textbf{ | \href{https://github.com/DarshanDEV1/DT\_FILE}{Link}}\hfill{\sl Python-TK, CSV}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple GUI application using python tkinter makes the data entry job so easy which appends, inserts data to a csv file.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Survival game}}\textbf{ | \href{https://drive.google.com/file/d/1ZnBeZiy6eXkXYw2dBnO6opT8bSLgfQfe/view?usp=sharing}{Link}}\hfill{\sl .NET 2.0, Unity3d, Blender, Animations, Collision3d, Box collider, Raycasting, Cartesian coordinates, Vector3, DMS}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A survival game created for windows OS users.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Assignment of BIGTHINX company}}\textbf{ | \href{https://drive.google.com/file/d/1Rqr5XQDzfYqUQXrFuydPsJPV8fTGfmv7/view?usp=sharing}{Link}}\hfill{\sl .NET 2.0, Unity3d, Blender, Animations, Collision3d, Box collider, Cartesian coordinates, Vector3, DMS}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple demo game that is given as an assignment to me.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Bhaukaal raula}}\textbf{ | \href{https://drive.google.com/file/d/1Fy7XuyabrZhhgiSIgjpT1kJL8RrHQmSa/view?usp=sharing}{Link}}\hfill{\sl .NET 2.0, Unity3d, Blender, Animations, Collision3d, Box collider, Cartesian coordinates, Vector3, DMS, Android SDK, Android NDK19, JDK}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A zombie survival game created using unity3d only of android users.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Shot projectile}}\textbf{ | \href{https://github.com/DarshanDEV1/Shot\_Projectile-Game-using-Unity3D}{Link}}\hfill{\sl .NET 2.0, Unity3d, Blender, Animations, Collision3d, Box collider, Cartesian coordinates, Vector3, DMS, Android SDK, Android NDK19, JDK, Physics}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple game which is mainly based on physics properties like centrifugal force.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Knife Hit}}\textbf{ | \href{https://github.com/DarshanDEV1/BCA\_PROJECTS}{Link}}\hfill{\sl .NET 2.0, Unity3d, Blender, Animations, Collision3d, Box collider, Cartesian coordinates, Vector3, DMS, Android SDK, Android NDK19, JDK}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple replica of knife out game only for android users.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Calculator\_GTK}}\textbf{ | \href{https://github.com/DarshanDEV1/SimpleCalculator-Using-C}{Link}}\hfill{\sl Data structures, C, GTK3, Glade interface}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple calculator using Gtk glade interface and C as programming language and stack data structure is used for evaluation.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Bhaukaal Raula}}\textbf{ | \href{https://drive.google.com/file/d/17u6rGs43t2DiOKCY0Exy7tJMdEOzaRMX/view?usp=sharing}{Link}}\hfill{\sl .NET 2.0, Unity3d, Blender, Animations, Collision3d, Box collider, Cartesian coordinates, Vector3, DMS, Android SDK, Android NDK19, JDK}\\
+
+\vspace*{3mm}
+      {\textbf{Platform game}}\textbf{ | \href{https://drive.google.com/file/d/1-QXAx24qj7tw7KDmK4NDfKvgRmaOf\_0n/view?usp=sharing}{Link}}\hfill{\sl Gdevelop, Colliders}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple platform game created using Gdevelop a simple 2d game engine.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Dash\_BASH}}\textbf{ | \href{https://drive.google.com/file/d/10E0bbSPO8UcOia5Ql7eMN1a8wlKv8Yhx/view?usp=sharing}{Link}}\hfill{\sl Gdevelop, Collider}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple platform game here I tried to combine minecraft and platform game combine together.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{QUICK\_MATH}}\textbf{ | \href{https://drive.google.com/file/d/13Dis917UijNT\_VfnIfquScrFKSt1htko/view?usp=sharing}{Link}}\hfill{\sl Gdevelop}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple android application created using gdevelop where we have to answer the questions as quick as possible.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Wizard\_CSH}}\textbf{ | \href{https://drive.google.com/file/d/10gTVddU8Mp3IGP\_EwW3CWDW\_kAsixTuJ/view?usp=sharing}{Link}}\hfill{\sl Gdevelop, Colliders}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple platformer game with a wizard character.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{ResponseBOT}}\textbf{ | \href{https://github.com/DarshanDEV1/ResponseBot}{Link}}\hfill{\sl Pyttsx3, Numpy, Pandas, Matplotlib, Sklearn, Pyaudio, Pywhatkit, Textblob, Wikipedia}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple ResponseBOT using python and its libraries.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Mouse Run}}\textbf{ | \href{https://drive.google.com/file/d/1EAnTfjY9stPdBAms3a9Z3xEnkkcyWy7z/view?usp=share\_link}{Link}}\hfill{\sl .NET 2.0, Unity3d, Blender, Animations, Collision3d, Box collider, Cartesian coordinates, Vector3, DMS, Android SDK, Android NDK19, JDK, Github}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple replica of subway surfer, this game is modified with multiple characters and advanced look by me.
+\item[] Mainly UI/UX design is modified by me. And multiple characters are added by me. In unity 3d.
+\end{itemize}
+          \vspace*{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Certifications
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Certifications}
+      \vspace{2mm}
+      • Python for Machine Learning - \textbf{\href{http://verify.greatlearning.in/YCJZRFXF}{Great Learning}}\\
+\vspace*{1mm}
+      • Unity 101 - Game Development Foundations - \textbf{\href{https://academy.zenva.com/certificate/43c75b4090f0}{Zenva}}\\
+\vspace*{1mm}
+      • Linux Kernel Driver Development - \textbf{\href{https://www.udemy.com/certificate/UC-3422b92d-d6a8-49cc-9ad6-74bcdfed38f6/}{Udemy}}\\
+\vspace*{1mm}
+      • Basics of python programming - \textbf{\href{https://certificates.openweaver.com/en/verify/36763849170015}{Open Weaver}}\\
+\vspace*{1mm}
+      • Introduction to R - \textbf{\href{https://verify.mygreatlearning.com/verify/LEODPFME}{Great Learning}}\\
+\vspace*{1mm}
+      \vspace{2mm}
+
+
+
+    \ 
+    \end{document}
